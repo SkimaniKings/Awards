@@ -1,7 +1,13 @@
 from django.shortcuts import render
+from .forms import UserReagisterForm
+
 
 # Create your views here.
-def index(request)
+def index(request):
+    return render(request,"index.html")
+
+
+def register(request):
     form=UserReagisterForm()
     if request.method == "POST":
         form=UserReagisterForm(request.POST)
@@ -13,11 +19,7 @@ def index(request)
             return redirect("login")
     else:
         form=UserReagisterForm()
-    return render(request, "index.html",{"form":form})
-
-
-def register(request):
-    return render(request,"register.html")
-
+    return render(request, "register.html",{"form":form})
+    
 def profile(request):
     return render(request,"profile.html")
