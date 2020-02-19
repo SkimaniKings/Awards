@@ -30,3 +30,6 @@ def register(request):
     
 def profile(request):
     return render(request,"profile.html")
+
+def submit_site(request):
+    return (request, "submit_site.html")

@@ -19,7 +19,7 @@ class Project(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     date_posted = models.DateTimeField(auto_now=True)
     link = models.URLField(max_length=250)
-    country = models.CharField(max_length=50)
+    
 
     
 
