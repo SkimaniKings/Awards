@@ -13,6 +13,15 @@ class Profile(models.Model):
     contact = models.CharField(max_length=80 ,null=True)
     
     
+    def __str__(self):
+            return self.bio
+
+    def save_profile(self):
+        self.save()
+
+    def delete_profile(self):
+        self.delete()
+    
     
 class Project(models.Model):
     title = models.CharField(max_length=50)
