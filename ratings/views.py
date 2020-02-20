@@ -56,5 +56,5 @@ def profile(request):
         form = ProfileUpdateForm()
     return render(request, 'profile.html',{"form":form })
     
-    r
+    
 
