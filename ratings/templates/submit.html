@@ -1,4 +1,13 @@
 {%extends "base.html"%}
 {%block content%}
-<h1>This is THe submit site page</h1>
+{%include "navbar.html"%}
+{% load crispy_forms_tags %}
+
+<div class="container">
+<form action="" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+{{form | crispy}}
+<button type="submit" class="btn btn-outline-dark">Upload</button>
+</form>
+</div>
 {%endblock%}
