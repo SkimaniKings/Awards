@@ -10,6 +10,8 @@ class Profile(models.Model):
       
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     image = models.ImageField(default="roman_reigns.jpg")
+    contact = models.CharField(max_length=80 ,null=True)
+    
     
     
 class Project(models.Model):

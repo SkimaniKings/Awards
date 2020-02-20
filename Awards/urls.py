@@ -24,7 +24,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'',include("ratings.urls")),
     url(r'login/',auth_views.LoginView.as_view(template_name="login.html"), name="login"),
-    url(r'logout/',auth_views.LogoutView.as_view(template_name="index.html"), name="index"),
+    # url(r'logout/',auth_views.LogoutView.as_view(template_name="index.html"), name="index"),
     
     
 ]

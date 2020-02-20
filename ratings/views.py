@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from .forms import UserReagisterForm,PostUpdateForm
+from .forms import UserReagisterForm,PostUpdateForm,ProfileUpdateForm
 from django.contrib import messages
 from .models import Project
 from django.contrib.auth.decorators import login_required
@@ -43,5 +43,18 @@ def submit(request):
     return render(request,"submit.html",{"form":form})
 
 def profile(request):
-    return render(request,"profile.html")
+    current_user = request.user
+    if request.method == 'POST':
+        form = ProfileUpdateForm(request.POST,request.FILES)
+        if form.is_valid():
+            add = form.save(commit=False)
+            add.user = current_user
+            add.save()
+            messages.success(request, "Profile updated successfully")
+            return redirect('index')
+    else:
+        form = ProfileUpdateForm()
+    return render(request, 'profile.html',{"form":form })
+    
+    r
 
