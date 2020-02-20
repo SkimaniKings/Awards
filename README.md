@@ -6,13 +6,14 @@
 
 ## Description
 
-
+## Project screeen shot 
+![App](/static/images/Screenshot.png)
 
 ## Project live site
 
 This is the live .[ Click for the demo](https://awwwwards001.herokuapp.com/)
+This is the github repo link . [ Click for the demo](https://github.com/SkimaniKings/Awards.git)
 
-![Image](projects/static/img/award.png)
 
 ![alt text](projects/static/images/awwards.png)
 
