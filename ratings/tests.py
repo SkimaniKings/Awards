@@ -22,3 +22,22 @@ class ProfileTestClass(TestCase):
             self.new_profile.delete_profile()
             profile = Profile.objects.all()
             self.assertTrue(len(profile)==0)   
+            
+
+class ProjectTestClass(TestCase):
+
+    def setUp(self):
+        self.new_user = User(username='simonkim', email='kimanisimon856@gmail.com', password='qwertyuiop121')
+        
+        self.new_user.save()
+        self.new_post=Project(title="Nairobi",image='travel.png',description="Party the night away",link="https://w3resource.com")
+
+    def test_instance(self):
+        self.assertTrue(isinstance(self.new_post,Project))    
+
+    def test_save_post(self):
+        self.new_post.save_post()
+        post = Project.objects.all()
+        self.assertTrue(len(post)>0)
+
+  

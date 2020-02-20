@@ -33,7 +33,14 @@ class Project(models.Model):
     
 
     
-
     def __str__(self):
         return self.title
+    
+
+    def save_post(self):
+        self.save()
+
+    def delete_post(self):
+        self.delete()
+
   
