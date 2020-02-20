@@ -27,8 +27,18 @@ def register(request):
         form=UserReagisterForm()
     return render(request, "register.html",{"form":form})
     
+@login_required()
 def submit(request):
-    return render(request,"submit.html")
+    
+    if request.method == "POST":
+        form=PostUpdateForm(request.POST,request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect("index")
+    else:
+        form=PostUpdateForm
+  
+    return render(request,"submit.html",{"form":form})
 
 def profile(request):
     return render(request,"profile.html")
