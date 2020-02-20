@@ -54,20 +54,19 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '!)-z26)(d303@i+^%@-k_gk#%0=&)ty*og%za43-#l8c=6)wu3'
+# SECRET_KEY = '!)-z26)(d303@i+^%@-k_gk#%0=&)ty*og%za43-#l8c=6)wu3'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# # SECURITY WARNING: don't run with debug turned on in production!
+# DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'ratings.apps.RatingsConfig',
+    'ratings',
     'crispy_forms',
-    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
