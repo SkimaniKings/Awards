@@ -65,7 +65,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Application definition
 
 INSTALLED_APPS = [
-    'ratings',
+    'ratings.apps.RatingsConfig',
     'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
