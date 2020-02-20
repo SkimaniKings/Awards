@@ -1,48 +1,42 @@
 :satisfied:
 
-# Awwards
+# Awards
 
-#### Application to post projects to be rated by other users, Sunday November 24th 2019
 
-#### By **OPIYO TITUS**&trade;
 
 ## Description
 
-This is an app that allows users to like post and comment on other people posts
+
 
 ## Project live site
 
 This is the live .[ Click for the demo](https://awwwwards001.herokuapp.com/)
+
 ![Image](projects/static/img/award.png)
 
 ![alt text](projects/static/images/awwards.png)
 
-## Features
+## User stories
 
-- User can log in to application and view other peoples posts.
-- A user can rate o a post.
-- A user can upload posts and edit their profile.
-- Admin can regulate images uploaded by deleting from the admin dashboard as well as completely close a users account.
+- The User can create an account.
+- If the user already has an account they can log into their accounts.
+- A user can view websites posted by other users.
+- A user can update their profiles.
+- A user can post their projects on the website to be viewed by others.
+
 
 ## Behavior Driven Development
-
-| Behavior                                                  | Input                                            | Output                                                        |
-| --------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------- |
-| User visits the app and gets redirected to the login page | User logs in                                     | Directed to the home page where they see posted photos        |
-| If user has no account, they click on `sign up`           | User signs up                                    | User is redirected to the log in page                         |
-| Home page loads                                           | click to rate                                    | Rting count appear                                            |
-| Homepage loads                                            | Click `profile`                                  | User's profile appears                                        |
-| Homepage loads                                            | Click `upload image` icon                        | User's redirected to a page where they can upload an image    |
-| Homepage loads                                            | Click `settings` icon                            | A modal appears where one can change their password or logout |
-| Homepage loads                                            | User inputs in the search form and presses enter | Searched results show                                         |
+                                
 
 ## Setup/Installation requirements
 
-1.Clone or download and unzip the repository from github,https://github.com/costamay/Awwards.git
+1.Clone or download and unzip the repository from github, `https://github.com/SkimaniKings/Awards.git`
 
-2. Activate virtual environment using python3.6 as default handler virtualenv -p /usr/bin/python3.6 venv && source venv/bin/activate
+2. Create a vIrtual environment `pipenv <environment_name`
 
-3. Install dependancies that will create an environment for the app to run pip3 install -r requirements.txt
+Activate virtual environment using python3.6 `source venv/bin/activate`
+
+3. Install dependancies that will create an environment for the app to run `pip3 install -r requirements.txt`
 4. Create the Database
 
 - psql
@@ -71,19 +65,12 @@ This is the live .[ Click for the demo](https://awwwwards001.herokuapp.com/)
 - CSS
 - POSTGRESS
 
-## Prerequisite
-
-- PYTHON 3.6
-- DJANGO FRAMEWORK
-- PYTHON VIRTULENV
-- POSTGRESS
-
 ## Support and contact details
 
-Get in touch through - 0713813919
-                     - kimanisimon856@gmail.com
-                     
+Get in touch through - 0713813919 - kimanisimon856@gmail.com
 
 ### License
 
 Copyright &copy; 2019.All rigths reserved
+
+#### By **Simon Kimani**&trade;
