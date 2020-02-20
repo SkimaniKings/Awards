@@ -5,12 +5,13 @@
 <div class="container register">
                  <div class="col-md-6 simon mt-5">
             <h3 class="title text-center header">Register Today!</h3>
-            <p class="signup text-center para">Register today and get a change to rate you experience with differnt websites.</p>
+            <p class="signup text-center para">Already a member?<a href="{%url 'login'%}"><span class="sss">Login</span></a></p>
+      
+            
             <form action="" method="POST">
               {% csrf_token%}
               {{form | crispy}}
               <a href=""><button class="btn btn-info" type="submit">Sign Up</button></a>
-                <p><small class="text-muted">Already have an account?<a href="">Sign In</a></small></p>
             </form>
           </div>
         </div>

@@ -6,12 +6,12 @@
        
           <div class=" simon">
             <h3 class="title text-center header">Log in</h3>
-            <p class="signup text-center para">Login to you account today and get a change to rate you experience with differnt websites</p>
+            <p class="signup text-center para">Login to Continue.Not a member yet? <a href="{%url 'register'%}"><span class="sss">Register Now</span></a></p>
             <form action="" method="POST">
               {% csrf_token%}
               {{form | crispy}}
               <a href=""><button class="btn btn-info" type="submit">Sign in</button></a>
-                <p><small class="text-muted">Already have an account?<a href="">Sign In</a></small></p>
+                
             </form>
           </div>
         </div>

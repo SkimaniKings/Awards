@@ -1,7 +1,6 @@
 from django.shortcuts import render,redirect
 from .forms import UserReagisterForm
 from django.contrib import messages
-from django.views.generic import ListView
 from .models import Project
 
 
@@ -28,8 +27,9 @@ def register(request):
         form=UserReagisterForm()
     return render(request, "register.html",{"form":form})
     
+def submit(request):
+    return render(request,"submit.html")
+
 def profile(request):
     return render(request,"profile.html")
 
-def submit_site(request):
-    return (request, "submit_site.html")
