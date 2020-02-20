@@ -27,7 +27,27 @@ This is the live .[ Click for the demo](https://awwwwards001.herokuapp.com/)
 
 ## Behavior Driven Development
                                 
+   Input: The user enter their credentials as propted
+   Output: The user is redirected to the log in page.
 
+   NB: If the user enters wrong credentials he/she is prompted to enter new credentials. eg if the username is already taken.
+
+2. The user is redirected to the log in page
+   Input: The User enters the credentials that they used to sign up.
+   Output: If the Information is entered correctly the user is redirected to the home page.
+
+   NB: The User must enter correct information to proceed to the home page else they will be propted to re-enter their credentials.
+
+3. The User can Update their Profiles
+   Once A user is logged in their profile pages are loaded and User can Edit their Profiles.
+   Input: A user types in the new profiles that they want.
+   Output: After they are done success message appears that tells them that their info has been succesfully updated..
+
+4. The user can upload a Project
+   Input: The user uploads any project from their machines
+   Output: The uploaded project is displayed on the home page.
+5. The projects posted contain livelinks that navigate to the the websites live links
+    - A button is present on just below the project description to cater for this function 
 ## Setup/Installation requirements
 
 1.Clone or download and unzip the repository from github, `https://github.com/SkimaniKings/Awards.git`
