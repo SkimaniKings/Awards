@@ -1,7 +1,9 @@
 from django.shortcuts import render,redirect
-from .forms import UserReagisterForm
+from .forms import UserReagisterForm,PostUpdateForm
 from django.contrib import messages
 from .models import Project
+from django.contrib.auth.decorators import login_required
+
 
 
 
