@@ -14,8 +14,6 @@ This is a Django Web App similar to the Awwwards website. A user can create an a
 This is the github repo link . [ Click for the demo](https://github.com/SkimaniKings/Awards.git)
 
 
-![alt text](projects/static/images/awwards.png)
-
 ## User stories
 
 - The User can create an account.
@@ -48,7 +46,15 @@ This is the github repo link . [ Click for the demo](https://github.com/SkimaniK
    Output: The uploaded project is displayed on the home page.
 5. The projects posted contain livelinks that navigate to the the websites live links
     - A button is present on just below the project description to cater for this function 
+
+## Known bugs
+
+The project is currently under maintanance and the livelink is not working as expected.
+kindly `clone` the repository and run it from your local machine for the meantime.
+
 ## Setup/Installation requirements
+
+
 
 1.Clone or download and unzip the repository from github, `https://github.com/SkimaniKings/Awards.git`
 
