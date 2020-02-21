@@ -1,7 +1,7 @@
 :satisfied:
 
 # Awards
-
+This is a Django Web App similar to the Awwwards website. A user can create an account, login and post projects for others to rate. You also get reviews on your projects. 
 
 
 ## Description
@@ -11,7 +11,6 @@
 
 ## Project live site
 
-This is the live .[ Click for the demo](https://awwwwards001.herokuapp.com/)
 This is the github repo link . [ Click for the demo](https://github.com/SkimaniKings/Awards.git)
 
 

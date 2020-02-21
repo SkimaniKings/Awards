@@ -30,7 +30,7 @@ class ProjectTestClass(TestCase):
         self.new_user = User(username='simonkim', email='kimanisimon856@gmail.com', password='qwertyuiop121')
         
         self.new_user.save()
-        self.new_post=Project(title="Nairobi",image='travel.png',description="Party the night away",link="https://w3resource.com")
+        self.new_post=Project(title="Nairobi",image='www.jpg',description="Party the night away",link="https://w3resource.com")
 
     def test_instance(self):
         self.assertTrue(isinstance(self.new_post,Project))    
